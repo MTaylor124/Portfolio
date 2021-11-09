@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ExperienceBackdrop from './Desktop/ExperienceBackdrop'
 import Button from '@material-ui/core/Button'
 import { experienceData } from './ExperienceData'
+import disableScroll from 'disable-scroll'
 
 export const ExperienceDesktop = () => {
 
@@ -17,16 +18,24 @@ export const ExperienceDesktop = () => {
         paddingBottom: '7px'
     }
 
+    const [expInfo, setExpInfo] = useState({ open: false, current: null })
+
+    const exp = experienceData.filter(x => x.name === expInfo.current)[0]
+
+    const showExp = (name) => {
+        disableScroll.on()
+        setExpInfo({ open: true, current: name})
+    }
+
     return (
         <div className='d-section-container'>
-            <ExperienceBackdrop />
+            <ExperienceBackdrop exp={exp} setExpInfo={setExpInfo} expInfo={expInfo}/>
             <div className="d-experience-container">
                 <header>Experience</header>
                 <p>Click for more Details</p>
-
                 {experienceData.map(exp => {
                     return (
-                        <Button style={experienceButton} onClick={() => console.log('click')} key={exp.id}>
+                        <Button style={experienceButton} onClick={() => showExp(exp.name)} key={exp.id}>
                             <div className="left">
                                 <header>{exp.buttonHeader}</header>
                                 <p>{exp.buttonSubHeader}</p>

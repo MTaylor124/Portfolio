@@ -8,8 +8,8 @@ import WallpaperIcon from '@material-ui/icons/Wallpaper'
 import SpeedIcon from '@material-ui/icons/Speed'
 import GroupIcon from '@material-ui/icons/Group'
 import TimerIcon from '@material-ui/icons/Timer'
-export const Project = ({proj}) => {
 
+export const Project = ({proj}) => {
     if (!proj) return <></>
 
     const icons = { color: 'rgb(0, 69, 133)', fontSize: '60px' }
