@@ -26,6 +26,8 @@
     * Buttons are not longer hard coded / Removed redunant code
     * Created experienceData to generate components
     * Greatly improved scalability
+    * Backdrop content is now generated from experienceData
+        * One file went from 370 to 70 lines of code
 ## 11/8 
 1. Created Repo for Pre-existing Portfolio
 2. Created README
