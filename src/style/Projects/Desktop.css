@@ -1,0 +1,323 @@
+.d-projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0 40px;
+    width: 100%;
+}
+.d-projects-container .header {
+    font-size: 1.8rem;
+    margin: 0 0 5px; 
+    font-weight: 600;
+    color: rgb(0, 69, 133);
+}
+.d-projects-container .subheader {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: rgb(0, 69, 133);
+}
+.d-individual-project-container {
+    background-color: var(--primary);
+    min-height: 200px;
+    width: 700px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.d-projects-image-preview {
+    height: 250px;
+    width: 98%;
+    padding: 0 0 5px;
+    border-radius: 10px 10px 0 0;
+    
+}
+.d-project-info-container {
+    /* background-color: rgba(255,255,255,0.3); */
+    min-height: 200px;
+    width: 60%;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-project-info-header, .d-project-info-type-header, .d-project-info-type, .d-project-tech-header, .d-project-tech {
+    text-transform: none;
+    color: white;
+}
+.d-project-info-header {
+    font-size: 2rem;
+}
+.d-project-info-type-header, .d-project-tech-header {
+    font-size: 0.8rem;
+}
+.d-project-info-type, .d-project-tech {
+    font-size: 1.2rem;
+}
+
+/* backdrop */
+
+.exit-backdrop {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.d-backdrop-container {
+    /* background-color: var(--soft); */
+    background: linear-gradient(
+        0.15turn, 
+        rgb(0, 66, 104) 0%,
+        rgb(1, 96, 151) 15%, 
+        rgb(0, 112, 177) 32%, 
+        rgb(0, 69, 133) 37%, 
+        rgb(0, 118, 133) 95%);
+    /* height: 600px; */
+    width: 920px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 15;
+
+}
+.d-backdrop-header {
+    height: 10%;
+    width: 100%;
+    background-color: var(--primary);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.d-backdrop-header-item1 {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.8rem;
+}
+.d-backdrop-footer {
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d-b-b-header {
+    height: 15%;
+    width: 100%;
+    /* background-color: aqua; */
+}
+.d-b-b-header-link {
+    height: 100%;
+    width: 100%;
+}
+.d-b-b-header-style {
+    height: 100%;
+    width: 100%;
+    /* color: var(--primary); */
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    transition: 0.4s;
+}
+.d-b-b-header-style:hover {
+    color: var(--primary);
+    /* text-decoration: underline; */
+    font-size: 3.6rem;
+}
+.d-project-body {
+    width: 100%;
+    /* height: 85%; */
+    padding-bottom: 4px;
+    /* background-color: blueviolet; */
+    /* align-self: stretch; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.d-project-body .about {
+    width: 20%;
+    /* margin-left: 1%; */
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background: white;
+}
+.d-project-body .about header, .d-project-body .highlights header {
+    margin:  5px 0;
+    color: rgb(0, 69, 133);
+    /* color: var(--primary); */
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.d-project-body .about p {
+    text-align: left;
+    font-size: 0.9rem;
+    width: 94%;
+    border-radius: 10px;
+    font-weight: 600;
+    height: 100%;
+    color: rgb(0, 69, 133);
+    margin: 0;
+}
+
+.d-project-body .highlights {
+    background-color: white;
+    color: rgb(0, 69, 133);
+    width: 48%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: stretch;
+    padding-bottom: 7px;
+}
+
+.highlights header {
+    display: flex;
+    margin: auto;
+}
+.highlights .item {
+    width: 97%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.highlights .item section {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.highlights .item section header {
+    font-size: 1.8rem;
+    color: rgb(0, 69, 133);
+    font-weight: 600;
+    margin: 0 0 0 6px;
+}
+.highlights .item section p {
+    font-size: 0.9rem;
+    /* line-height: 0.95; */
+    width: 90%;
+    margin: 0 0 0 20px;
+    color: rgb(0, 69, 133);
+    font-weight: 600;
+}
+.d-project-body .tech{
+    /* margin-right: 1%; */
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: stretch;
+}
+.tech header {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+}
+.tech .item {
+    width: 90%;
+    margin-bottom: 10px;
+    color: white;
+}
+.tech .item header {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0 0 3px;
+    text-align: center;
+}
+.tech .item p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+
+.d-projects-new-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: white;
+    width: 100%;
+    padding-bottom: 5px;
+} 
+
+.d-u-backdrop-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 87px;
+}
+.d-u-backdrop-header .link {
+    font-size: 3.6rem;
+    /* transition: 1.6s; */
+    text-decoration: none;
+    color: white;
+}
+.d-u-backdrop-header .link:hover {
+    text-decoration: underline;
+}
+.d-u-backdrop-header .left {
+    height: 1px;
+    width: 100px;
+}
+
+.d-projects-container .grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    /* overflow: ; */
+}
+
+.d-projects-container .grid-container .item {
+    width: 395px;
+    margin-bottom: 10px;
+}
+/*? Add additional media queries later */
+@media only screen and (max-width: 789px) {
+    .d-projects-container .grid-container .item {
+        min-width: 85%;
+        max-width: 90%;
+    }
+    .d-projects-image-preview {
+        height: 500px;
+        padding-top: 3px;
+    }
+}
+
+/* d-projects-new-container */

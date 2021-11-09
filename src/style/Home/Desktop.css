@@ -1,0 +1,76 @@
+.d-home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+.d-home-pic-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.d-home-pic {
+    height: 300px;
+    border-radius: 10px;
+}
+.d-home-about-me {
+    width: 340px;
+    text-align: center;
+    margin-left: 25px;
+    font-size: 0.9rem;
+    padding: 8px;
+    border-radius: 10px;
+    color: rgb(0, 69, 133);
+    font-weight: 600;
+    /* background-color: var(--soft-dark); */
+    /* background-color: rgba(0, 112, 177, 0.137); */
+    background-color: rgba(255, 255, 255, 0.479);
+}
+.d-home-header {
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin: 25px 0;
+    color: rgb(0, 69, 133);
+}
+.d-home-subheader-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+.d-home-subheader {
+    font-size: 1.8rem;
+    /* margin: 5px 0 7px; */
+    color: rgb(0, 69, 133);
+    font-weight: 600;
+}
+.d-home-contact-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* height: 20px; */
+    margin-top: 10px;
+}
+.d-contact-list-item-updated {
+    /* color: var(--primary); */
+    color: rgb(0, 69, 133);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin: 0 12px;
+    transition: 0.4s;
+}
+.d-contact-list-item-updated:hover {
+    /* color: var(--primary-light); */
+    color: rgb(0, 66, 104);
+}
+.d-contact-resume-link {
+    margin-left: 30px;
+    font-size: 1.8rem;
+}

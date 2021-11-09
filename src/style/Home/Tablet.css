@@ -1,0 +1,47 @@
+.t-home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 60px 0;
+}
+.t-home-header {
+    font-size: 5rem;
+    margin-bottom: 30px;
+}
+.t-home-subheader {
+    font-size: 1.8rem;
+}
+.t-home-contact-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    margin: 5px 0 15px;
+}
+.t-home-contact-item {
+    margin: 0 10px;
+}
+.t-home-contact-item-link {
+    color: black;
+}
+.t-home-pic-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.t-home-pic {
+    height: 300px;
+    border-radius: 10px;
+}
+.t-home-about-me {
+    width: 300px;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.418);
+
+}

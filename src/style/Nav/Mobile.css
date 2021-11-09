@@ -1,0 +1,21 @@
+.m-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    background-color: var(--primary);
+    position: sticky;
+    top: 0;
+    z-index: 500;
+}
+.m-nav-container::-webkit-scrollbar {
+    display: none;
+  }
+.m-home-new-contact-item {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+}

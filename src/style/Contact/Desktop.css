@@ -1,0 +1,50 @@
+.d-contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 70px;
+    /* padding-bottom: 5px solid var(--primary); */
+}
+
+.d-contact-header {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 100px 0 40px;
+    text-align: center;
+    color: rgb(0, 69, 133);
+}
+.d-contact-row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.d-contact-item {
+    margin-bottom: 10px;
+    /* width: 250px; */
+    margin: 0 20px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.d-contact-item-new {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 1.8rem;
+    text-decoration: none;
+    /* color: black; */
+    font-weight: 600;
+    color: rgb(0, 69, 133);
+}

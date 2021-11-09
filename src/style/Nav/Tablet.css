@@ -1,0 +1,19 @@
+.t-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 8vh;
+    background-color: var(--primary);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.t-nav-header {
+    padding-left: 10px;
+}
+.t-nav-brand {
+    font-size: 2.1rem;
+    color: var(--secondary);
+}

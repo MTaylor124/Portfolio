@@ -1,0 +1,23 @@
+:root {
+    --primary: rgb(0, 80, 80);
+    --primary-light: rgba(0, 167, 167, 0.472);
+    --secondary: rgb(102, 195, 255);
+    --secondary-faded: rgb(174, 218, 248);
+    --secondary-dark: rgb(0, 103, 172);
+    --soft: rgb(220, 225, 233);
+    --soft-dark: rgb(187, 194, 204);
+    --accent: rgb(212, 175, 185);
+    --accent-dark: rgb(189, 70, 102);
+    --highlight: rgb(241, 206, 2);
+    --highlight-dark: rgb(192, 163, 0);
+    --highlight-faded: rgba(241, 206, 2, 0.65);
+    --border-radius: 15px;
+    --font: 'Roboto';
+}
+/* primary changes will also need to be made:
+    mobile/tablet dropdown/item color
+*/
+.primary-theme-color {
+    color: var(--primary);
+    text-transform: none;
+}

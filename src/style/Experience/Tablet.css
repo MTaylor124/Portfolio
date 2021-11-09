@@ -1,0 +1,51 @@
+.t-experience-container {
+    height: 100%;
+    width: 100%;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+.t-experience-header {
+    font-size: 4rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+.t-experience-ga-pic {
+    height: 80px;
+    margin-bottom: 20px;
+}
+.t-experience-middle-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.t-experience-middle-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.t-experience-ga-kitchen {
+    height: 180px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+.t-experience-sei {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+.t-experience-date {
+    font-size: 1.1rem;
+}
+.t-experience-body {
+    max-width: 700px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.432);
+}
