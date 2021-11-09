@@ -15,7 +15,10 @@
 9. Remove all images/media from project to minimize app size
     * Upload images/resume to Google Storage
     * Get all images upon page load
-
+10. Add adnimations using react-spring to animate items within sections:
+    * Projects
+    * Experience
+    * Skills
 # Changelog
 
 ## 11/8 
