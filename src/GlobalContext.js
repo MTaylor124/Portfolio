@@ -1,5 +1,4 @@
 import React, {createContext, Component} from 'react'
-import disableScroll from 'disable-scroll'
 
 export const GlobalContext = createContext()
 
@@ -24,32 +23,6 @@ export class GlobalContextProvider extends Component {
                 highlightFaded: 'rgba(241, 206, 2, 0.65)',
                 fadedCloseIcon: 'rgba(100,100,100,0.4)',
                 black: 'black'
-            },
-            experience: {
-                experienceID: null,
-                showingBackdrop: false,
-                showBackdrop: (exp) => {
-                    disableScroll.on()
-                    this.setState(s => {
-                        return s.experience.experienceID = exp
-                    })
-                    setTimeout(() => {
-                        this.setState(s => {
-                            return s.experience.showingBackdrop = true
-                        })
-                    }, 10)
-                },
-                hideBackdrop: () => {
-                    disableScroll.off()
-                    this.setState(s => {
-                        return s.experience.showingBackdrop = false
-                    })
-                    setTimeout(() => {
-                        this.setState(s => {
-                            return s.experience.experienceID = null
-                        })
-                    }, 301)
-                }
             },
             nav: {
                 showingDropdown: false,
