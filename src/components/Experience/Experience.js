@@ -1,5 +1,5 @@
 import React from 'react'
-import ExperienceDesktop from './ExperienceDesktop'
+import {ExperienceDesktop} from './ExperienceDesktop'
 
 // import {
 //     isMobileOnly,

@@ -1,14 +1,13 @@
 .d-experience-container {
     height: 100%;
     width: 100%;
-    /* background-color: brown; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px 0 60px;
 }
-.d-experience-header {
+.d-experience-container header {
     font-size: 1.8rem;
     margin-bottom: 5px;
     font-weight: 600;
@@ -16,7 +15,7 @@
     color: rgb(0, 69, 133);
 
 }
-.d-experience-subheader {
+.d-experience-container p {
     font-size: 0.9rem;
     margin-bottom: 30px;
     font-weight: 600;
@@ -32,36 +31,35 @@
     justify-content: center;
     align-items: center;
 }
-.d-experience-middle-left {
+.d-experience-container .left {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 60%;
 }
-.d-experience-middle-right {
+.d-experience-container .right {
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.d-experience-ga-kitchen {
+.d-experience-container .exp-preview {
     height: 80px;
     border-radius: 15px;
     /* margin-left: 20px; */
 }
-.d-experience-entry-header {
+.d-experience-container .left header {
     font-size: 1.8rem;
-    margin-bottom: 5px;
+    margin: 0;
     font-weight: 600;
     color: rgb(0, 69, 133);
-    /* width: 80% */
-
 }
-.d-experience-date {
+.d-experience-container .left p {
     font-size: 0.9rem;
     font-weight: 600;
     color: rgb(0, 69, 133);
+    margin: 0;
 }
 .mynewcolorandweight {
     color: rgb(0, 69, 133);
