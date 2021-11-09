@@ -63,7 +63,7 @@
 
 /* backdrop */
 
-.exit-backdrop {
+.exit-backdrop, .exit-backdrop-exp {
     height: 100%;
     width: 100%;
     position: absolute;
