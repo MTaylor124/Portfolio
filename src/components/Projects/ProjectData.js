@@ -14,6 +14,7 @@ export const projectData = [
         preview: TheLotBroker,
         route: './previews/thelotbrokerpreview.png',
         link: 'https://thelotbroker.com/',
+        githubLink: '',
         buttonText: 'The Lot Broker',
         about: 'TheLotBroker.com is a freelance project I picked up in early February 2020. I built an entirely new web app that would allow his colleagues to easier view his current inventory of Lots and to allow clients to easily contact him.',
         highlights: [
@@ -69,6 +70,7 @@ export const projectData = [
         preview: SpikeRush,
         route: './previews/spikerushpreview.png',
         // link: 'https://rankedspikerush.gg/',
+        githubLink: '',
         link: 'https://rankedspikerush.web.app/',
         buttonText: 'Ranked Spike Rush',
         about: 'RankedSpikeRush is a personal project based on a temporary game mode in the video game Rocket League. I built the site in less than 2 days and a week later I had build up a community of over 200 players and organized and carried out a 50+ team tournament that crowdfunded $200 grand prize for the winners.',
@@ -119,6 +121,7 @@ export const projectData = [
         preview: Icebreaker,
         route: './previews/icebreaker.png',
         link: 'https://ice-breaker-maker.web.app/',
+        githubLink: '',
         buttonText: 'General Assembly Hackathon',
         about: 'I was Group Leader for a team of 5 that included both UX/UI experts and software engineers to successfully prototype, build, and present a fully functional mobile web app in less than 3 days.',
         highlights: [
@@ -168,6 +171,7 @@ export const projectData = [
         preview: Blog,
         link: null,
         buttonText: 'Blog',
+        githubLink: '',
         about: '',
         highlights: [
             {
@@ -222,6 +226,7 @@ export const projectData = [
         preview: Mattcersize,
         link: 'https://mtaylor124.github.io/Mattcersize-Client/#/',
         buttonText: 'Mattcersize (Deprecated)',
+        githubLink: '',
         about: '',
         highlights: [
             {
@@ -276,6 +281,62 @@ export const projectData = [
         preview: null,
         link: null,
         buttonText: 'Chuzr (in progress)',
+        githubLink: '',
+        about: '',
+        highlights: [
+            {
+                title: '',
+                description: '',
+                id: '',
+                icon: ''
+            },
+            {
+                title: '',
+                description: '',
+                id: '',
+                icon: 'FormatListBulletedTwoToneIcon'
+            },
+            {
+                title: '',
+                description: '',
+                id: '',
+                icon: 'PhotoSizeSelectActualTwoToneIcon'
+            },
+            {
+                title: '',
+                description: '',
+                id: '',
+                icon: 'ChatTwoToneIcon'
+            }
+        ],
+        tech: [
+            {
+                title: 'React',
+                description: 'Created Custom and Reusable Components\n\nStage managed with Context',
+                id: 'lot-tech-000'
+            },
+            {
+                title: 'Google Firebase',
+                description: 'Utilized for Hosting, Databases, Storage, and Authentication',
+                id: 'lot-tech-001'
+            },
+            {
+                title: 'CSS3',
+                description: 'Styled with CSS and Object-Oriented CSS with Material-UI',
+                id: 'lot-tech-002'
+            }
+        ]
+    },
+    //! Portfolio
+    {
+        included: true,
+        order: 7,
+        name: 'Portfolio',
+        id: 'project-id-006',
+        preview: null,
+        link: null,
+        buttonText: 'Portfolio',
+        githubLink: '',
         about: '',
         highlights: [
             {
