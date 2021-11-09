@@ -21,6 +21,11 @@
     * Skills
 # Changelog
 
+## 11/9 
+1. Refactored Experience section
+    * Buttons are not longer hard coded / Removed redunant code
+    * Created experienceData to generate components
+    * Greatly improved scalability
 ## 11/8 
-* Created Repo for Pre-existing Portfolio
-* Created README
+1. Created Repo for Pre-existing Portfolio
+2. Created README
