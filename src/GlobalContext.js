@@ -17,26 +17,14 @@ export class GlobalContextProvider extends Component {
                 secondaryTitle: 'rgba(102, 195, 255, 0.8)',
                 secondaryFaded: 'rgb(174, 218, 248)',
                 secondaryDark: 'rgb(0, 103, 172)',
-
                 soft: 'rgb(220, 225, 233)',
-
                 navText: 'white',
-
                 accent: 'rgb(212, 175, 185)',
                 highlight: 'rgb(241, 206, 2)',
                 highlightFaded: 'rgba(241, 206, 2, 0.65)',
                 fadedCloseIcon: 'rgba(100,100,100,0.4)',
                 black: 'black'
             },
-
-
-
-
-
-
-
-
-
             experience: {
                 experienceID: null,
                 showingBackdrop: false,
@@ -63,27 +51,6 @@ export class GlobalContextProvider extends Component {
                     }, 301)
                 }
             },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             nav: {
                 showingDropdown: false,
                 showDropdown: (anchor) => {
