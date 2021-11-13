@@ -21,6 +21,18 @@
     * Skills
 # Changelog
 
+## 11/13 
+1. Refactored Skills section
+    * 515 -> 46 lines of code
+    * Accordions are no longer hard coded
+    * Improved scalability
+    * Redesigned Skill Accordions
+
+## 11/12
+1. Created skillsData file
+    * Each skill will be generated from this data set
+    * Nested data to optimize render time
+
 ## 11/9 
 1. Refactored Experience section
     * Buttons are not longer hard coded / Removed redunant code
