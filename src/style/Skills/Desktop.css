@@ -7,19 +7,22 @@
     width: 100%;
     padding: 20px 0 40px;
 }
-.d-skills-header {
+.d-skills-container header {
     font-size: 1.8rem;
     margin-bottom: 5px;
     font-weight: 600;
     color: rgb(0, 69, 133);
-
     display: flex;
 }
-.d-skills-sub-header {
+.asdhjgajhsgdajhsg:hover {
+    text-decoration: underline;
+}
+.d-skills-container p {
     font-size: 0.9rem;
     margin-bottom: 30px;
     font-weight: 600;
     color: rgb(0, 69, 133);
+    
 }
 .d-skills-column-container {
     display: flex;
@@ -100,7 +103,7 @@
     align-items: center;
 }
 .d-skills-details-header {
-    font-size: 0.9rem;
+    font-size: 1.8rem;
     margin: 12px;
     text-align: center;
     color: rgb(0, 69, 133);
@@ -121,7 +124,7 @@
     color: rgb(0, 69, 133);
     font-weight: 600;
     letter-spacing: 0.5px;
-    width: 80%;
+    width: 95%;
 }
 .d-skills-link {
     font-size: 0.9rem;
@@ -135,4 +138,7 @@
 .d-skills-link:hover {
     font-size: 1rem;
     color: black;
+}
+.skill-underline {
+    /* color: rgb(0, 69, 133); */
 }
