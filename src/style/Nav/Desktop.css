@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: flex-end;
 }
-.d-nav-item, .d-nav-item-last {
+.d-nav-container .item, .d-nav-container .last-item {
     height: 100%;
     width: 100px;
     text-align: center;
@@ -29,10 +29,10 @@
     transition: 0.5s;
     font-size: 1rem;
 }
-.d-nav-item-last {
+.d-nav-container .last-item {
     border-radius: 0 0 15px 0;
 }
-.d-nav-item:hover, .d-nav-item-last:hover {
+.d-nav-container .item:hover, .d-nav-container .last-item:hover {
     font-size: 1.1rem;
     background-color: var(--primary-light);
 }
