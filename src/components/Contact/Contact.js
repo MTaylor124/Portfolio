@@ -1,5 +1,5 @@
 import React from 'react'
-import ContactDesktop from './ContactDesktop'
+import {ContactDesktop} from './ContactDesktop'
 
 // import {
 //     isMobileOnly,
