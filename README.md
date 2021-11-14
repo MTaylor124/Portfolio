@@ -23,10 +23,11 @@
 
 ## 11/13 
 1. Refactored Skills section
-    * 515 -> 46 lines of code
+    * 515 -> 45 lines of code
     * Accordions are no longer hard coded
     * Improved scalability
     * Redesigned Skill Accordions
+    * Replaced div's with semantically named elements
 
 ## 11/12
 1. Created skillsData file
