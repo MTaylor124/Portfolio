@@ -1,60 +1,29 @@
-import React, {useContext} from 'react'
-import {GlobalContext} from './../../GlobalContext'
-
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function NavDesktop() {
 
-    let {
-        colors,
-        theme
-    } = useContext(GlobalContext)
+    const homeLink = { textDecoration: 'none', color: 'white', paddingLeft: '10px', fontSize: '1.8rem' }
+    const linkItem = { textDecoration: 'none', color: 'white' }
 
-    const linkItem = {
-        textDecoration: 'none',
-        color: colors.navText
-    }
+    const navItems = [
+        { text: 'Overview', id: 'nav-link-item-000', link: '/' },
+        { text: 'Projects', id: 'nav-link-item-001', link: '/projects' },
+        { text: 'Experience', id: 'nav-link-item-002', link: '/experience' },
+        { text: 'Skills', id: 'nav-link-item-003', link: '/skills' },
+        { text: 'Contact', id: 'nav-link-item-004', link: '/contact' }
+    ]
+
     return (
         <div className='d-nav-container'>
-            <div className='d-nav-header'>
-                <Link to='/' style={linkItem} className='d-nav-brand-container' onClick={() => {
-                    theme.fade.transition()
-                }}>
-                    <div className='d-nav-brand'>Matt Taylor Portfolio</div>
-                </Link>
-            </div>
-            <div className='d-nav-links'>
-                <Link to='/' style={linkItem} className='d-nav-item' onClick={() => {
-                    theme.fade.transition()
-                }}>
-                    Overview
-                </Link>
-                <Link to='/projects' style={linkItem} className='d-nav-item' onClick={() => {
-                    theme.fade.transition()
-                }}>
-                    Projects
-                </Link>
-                <Link to='/experience' style={linkItem} className='d-nav-item' onClick={() => {
-                    theme.fade.transition()
-                    }}>
-                    Experience
-                </Link>
-                <Link to='/skills' style={linkItem} className='d-nav-item' onClick={() => {
-                    theme.fade.transition()
-                    }}>
-                    Skills 
-                </Link>
-                <Link to='/contact' style={linkItem} className='d-nav-item-last' onClick={() => {
-                    theme.fade.transition()
-                    }}>
-                    Contact
-                </Link>
-                {/* <Link to='/blog' style={linkItem} className='d-nav-item-last' onClick={() => {
-                    theme.fade.transition()
-                    }}>
-                    Blog
-                </Link> */}
-            </div>
+            <Link to='/' style={homeLink}>Matt Taylor Portfolio</Link>
+            <section>
+                {navItems.map(item => (
+                    <Link to={item.link} style={linkItem} className={item.text !== 'Contact' ? 'd-nav-item' : 'd-nav-item-last'} key={item.id}>
+                        {item.text}
+                    </Link>
+                ))}
+            </section>
         </div>
     )
 }

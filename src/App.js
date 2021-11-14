@@ -9,7 +9,7 @@ import {Contact} from './components/Contact/Contact'
 import {Experience} from './components/Experience/Experience'
 import {Projects} from './components/Projects/Projects'
 // import Interests from './components/Interests/Interests'
-// import {Skills} from './components/Skills/Skills'
+import {Skills} from './components/Skills/Skills'
 // import Blog from './components/Blog/Blog'
 // import FadeIn from './components/FadeIn/FadeIn'
 // import FadeInNav from './components/FadeIn/FadeInNav'
@@ -39,7 +39,6 @@ const theme = createTheme({
 
 export default function App() {
     // <Route path='/blog' component={Blog}/>
-    // <Route path='/skills' component={Skills}/>
     // <FadeIn />
     // <FadeInNav />
     // <FadeBetween />
@@ -54,6 +53,7 @@ export default function App() {
                             <Route path='/projects' component={Projects}/>
                             <Route path='/experience' component={Experience}/>
                             <Route path='/contact' component={Contact} />
+                            <Route path='/skills' component={Skills}/>
                         </Switch>
                     </div>
                 </div>
