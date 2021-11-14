@@ -6,7 +6,7 @@ import { includedSkills } from "./SkillsData"
 
 export const SkillsDesktop = () => {
     const accordion = { backgroundColor: 'rgba(0, 118, 133, 0)', width: '65%', boxShadow: 'none', border: 'none', minHeight: '0px' }
-    const summary = { padding: '0px',  minHeight: '10px', fontSize: '1.8rem', textDecorationColor: 'rgb(0, 69, 133)', backgroundColor: 'rgba(255, 255, 255, 0.25)' }
+    const summary = { padding: '0px',  minHeight: '10px', fontSize: '1.8rem', backgroundColor: 'rgba(255, 255, 255, 0.25)' }
     const details = { boxShadow: 'none', border: 'none', paddingTop: '0' }
 
     const skillUnderlineList = includedSkills.map(item => false)

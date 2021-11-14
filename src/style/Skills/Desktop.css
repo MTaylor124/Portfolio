@@ -152,5 +152,6 @@ section h4 {
 }
 .skill-underline:hover {
     text-decoration: underline;
+    text-decoration-color: rgb(0, 69, 133);
 }
 /* d-skills-details-header */
