@@ -1,6 +1,6 @@
 # Matt Taylor Profile
 
-**_Currently Under Development 11/8/21_**
+**_Currently Under Development as of 11/8/21_**
 
 
 ## Development Plans:
@@ -28,6 +28,7 @@
     * Improved scalability and readability
     * Removed link to context for optimization
     * Created navData file 
+2. Refactored Contact section
 
 ## 11/13 
 1. Refactored Skills section
