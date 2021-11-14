@@ -23,10 +23,11 @@
 
 ## 11/14
 1. Refactored Nav section
-    * 68 -> 29 lines of code
+    * 68 -> 21 lines of code
     * Links no longer hard coded
     * Improved scalability and readability
     * Removed link to context for optimization
+    * Created navData file 
 
 ## 11/13 
 1. Refactored Skills section
