@@ -70,7 +70,6 @@ export class GlobalContextProvider extends Component {
                         if (this.state.theme.fade.transitioning) {
                             return
                         } else {
-                            this.state.skills.clearUnderlines()
                             window.scrollTo(0, 0)
                             this.setState(s => {
                                 return s.theme.fade.transitioning = true
@@ -83,68 +82,6 @@ export class GlobalContextProvider extends Component {
                         }
                     }
                 }
-            },
-            skills: {
-                underline: [
-                    // react 0
-                    'none',
-                    // firebase 1
-                    'none',
-                    // express 2
-                    'none',
-                    // css 3
-                    'none',
-                    // reactNative 4
-                    'none',
-                    // javascript 5
-                    'none',
-                    // git 6
-                    'none',
-                    // node 7
-                    'none',
-                    // mongo 8
-                    'none',
-                    // vscode 9
-                    'none'
-                ],
-                toggleSkills: (index, old) => {
-                    if (old === 'none') {
-                        this.setState(s => {
-                            return s.skills.underline[index] = 'underline rgb(0, 69, 133)'  
-                        })
-                    } else {
-                        this.setState(s => {
-                            return s.skills.underline[index] = 'none'
-                        })
-                    }
-                },
-                clearUnderlines: () => {
-                    this.setState(s => {
-                        return s.skills.underline = [
-                            // react 0
-                            'none',
-                            // firebase 1
-                            'none',
-                            // express 2
-                            'none',
-                            // css 3
-                            'none',
-                            // reactNative 4
-                            'none',
-                            // javascript 5
-                            'none',
-                            // git 6
-                            'none',
-                            // node 7
-                            'none',
-                            // mongo 8
-                            'none',
-                            // vscode 9
-                            'none'
-                        ]
-                    })
-                }
-
             }
         }
     }
