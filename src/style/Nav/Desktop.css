@@ -1,78 +1,38 @@
 .d-nav-container {
     max-width: 950px;
     height: 45px;
-    /* background-color: var(--primary); */
-    background: linear-gradient(
-        0.15turn, 
-        rgb(0, 66, 104) 0%,
-        rgb(1, 96, 151) 15%, 
-        rgb(0, 112, 177) 32%, 
-        rgb(0, 69, 133) 37%, 
-        rgb(0, 118, 133) 95%);
+    background: linear-gradient(0.15turn, rgb(0, 66, 104) 0%,rgb(1, 96, 151) 15%, rgb(0, 112, 177) 32%, rgb(0, 69, 133) 37%, rgb(0, 118, 133) 95%);
     margin: auto;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-radius: 0 0 15px 15px;
-
     position: sticky;
     top: 0;
     z-index: 9;
 }
-.d-nav-header {
+.d-nav-container section {
     height: 100%;
-    width: 35%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 1.8rem;
-}
-.d-nav-brand-container {
-    padding-left: 10px;
-}
-.d-nav-links {
-    height: 100%;
-    width: 65%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
 }
-.d-nav-item {
+.d-nav-item, .d-nav-item-last {
     height: 100%;
-    width: 17%;
+    width: 100px;
     text-align: center;
-
     display: flex;
     justify-content: center;
     align-items: center;
-    /* color: var(--secondary); */
     transition: 0.5s;
     font-size: 1rem;
-}
-.d-nav-item:hover {
-    font-size: 1.1rem;
-    /* color: white; */
-    background-color: var(--primary-light);
 }
 .d-nav-item-last {
-    height: 100%;
-    width: 17%;
-    text-align: center;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* color: var(--secondary); */
-    transition: 0.5s;
-    font-size: 1rem;
     border-radius: 0 0 15px 0;
 }
-.d-nav-item-last:hover {
+.d-nav-item:hover, .d-nav-item-last:hover {
     font-size: 1.1rem;
-    /* color: var(--highlight); */
     background-color: var(--primary-light);
 }
