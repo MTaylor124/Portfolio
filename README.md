@@ -21,6 +21,19 @@
     * Skills
 # Changelog
 
+## 11/15
+1. Completely restructured file directory
+    * Removed 'interests' section as it was not being used
+    * Created mobile/tablet directories for related files
+    * Removed last 2 hard coded projects
+    * Added mattcersize, blog data to projectData
+    * Put projects into Data directory as well as images used in projects and experience sections
+    * Removed intermediary components that use to reroute depending on device
+    * Moved blog section to within Mobile directory
+2. General refactoring
+    * Converted remaining components to arrow functional components where appropriate
+    * Removed redundant return statements within arrow functions that exclusively return elements
+
 ## 11/14
 1. Refactored Nav section
     * 68 -> 21 lines of code
@@ -29,6 +42,9 @@
     * Removed link to context for optimization
     * Created navData file 
 2. Refactored Contact section
+3. Refactored component parent contains
+    * Removing commented out code - will be entirely replaced
+    * isMobile is being imported in many areas, will reduce to 1 import and move all mobile components into a dedicated directory for better file management and optimization
 
 ## 11/13 
 1. Refactored Skills section
@@ -50,6 +66,7 @@
     * Greatly improved scalability
     * Backdrop content is now generated from experienceData
         * One file went from 370 to 70 lines of code
+
 ## 11/8 
 1. Created Repo for Pre-existing Portfolio
 2. Created README
