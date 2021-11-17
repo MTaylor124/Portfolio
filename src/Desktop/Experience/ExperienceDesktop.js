@@ -20,9 +20,9 @@ export const ExperienceDesktop = () => {
 
     const [expInfo, setExpInfo] = useState({ open: false, current: null })
 
-    const exp = experienceData.filter(x => x.name === expInfo.current)[0]
+    const exp = experienceData.find(x => x.name === expInfo.current)
 
-    const showExp = (name) => {
+    const showExp = name => {
         disableScroll.on()
         setExpInfo({ open: true, current: name})
     }
