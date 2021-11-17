@@ -19,7 +19,13 @@
     * Projects
     * Experience
     * Skills
+11. Uninstall material UI library and only install specific components and icons that are used
+    * Decrease app size
 # Changelog
+
+## 11/16
+1. Minor optimization changes
+    * Updated .filter()[0] to .find() for slight optimization improvement in projects and experience sections
 
 ## 11/15
 1. Completely restructured file directory
