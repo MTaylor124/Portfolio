@@ -20,7 +20,7 @@ export const ProjectsDesktop = () => {
 
     const [projInfo, setProjInfo] = useState({ open: false, current: null })
 
-    const proj = includedProjects.filter(x => x.name === projInfo.current)[0]
+    const proj = includedProjects.find(x => x.name === projInfo.current)
 
     const showProj = name => {
         disableScroll.on()
