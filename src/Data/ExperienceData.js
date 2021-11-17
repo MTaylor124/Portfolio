@@ -16,43 +16,43 @@ export const experienceData = [
         preview: NULogo,
         highlights: [
             {
-                title: 'Web Development Instructor',
-                body: 'I teach web development fundamental courses for groups of 10-14 students.',
+                title: 'Taught Virtual Workshops',
+                body: 'Each bootcamp is comprised of 4 workshops that take place each Saturday for 4 hours. During this time I lead each class on a review of the weekly material and demonstrate each concept within VSCode. ',
                 id: 'nuc-exp-highlight-000'
             },
             {
-                title: 'HTML5',
-                body: 'I teach and review HTML fundamentals including common elements, attributes, HTML hierarchy best practice coding structure.',
+                title: 'Graded Workshop Assignments',
+                body: 'After the review, the remaining time is dedicated to the workshop assignment that puts into practice information covered. These assignments are then submitted to me to be graded. I grade workshop submissions based on Overall Functionality, Code Readability, Correct/Consistent Syntax and Hierarchal Document Structure.',
                 id: 'nuc-exp-highlight-001'
             },
             {
-                title: 'CSS3',
-                body: 'I teach CSS fundamentals including creating internal/importing external stylesheets, best practice ruleset structure',
+                title: 'Provided Constructive Feedback',
+                body: 'For each workshop submission I try to provide a minimum (but usually many more) of 3 specific points of feedback. In addition to this, I reformat and restructure workshop submissions using HTML/CSS/JS best practices so that the students can see how their code should look to improve readability. For students who’s submissions do not require critical feedback, I provide resources for logical next concepts to learn even if those concepts are not covered in the Nucamp curriculum.',
                 id: 'nuc-exp-highlight-002'
-            },
-            {
-                title: 'EMPTY',
-                body: 'EMPTY',
-                id: 'nuc-exp-highlight-003'
             }
         ],
         tech: [
             {
-                title: 'EMPTY',
-                body: 'EMPTY',
+                title: 'HTML5',
+                body: 'Core concepts covered include common elements and their attributes, document structure and syntax',
                 id: 'nuc-exp-tech-000'
             },
             {
-                title: 'EMPTY',
-                body: 'EMPTY',
+                title: 'CSS3',
+                body: 'Inline vs internal/external stylesheets, ruleset synax, common properties and selectors',
                 id: 'nuc-exp-tech-001'
             },
             {
-                title: 'EMPTY',
-                body: 'EMPTY',
+                title: 'JavaScript',
+                body: 'Declaring variables, data types, functions, conditional statements, loops, operators, scope',
                 id: 'nuc-exp-tech-002'
             }
+        ],
+        // Concept List and Student Reviews
+        extra: [
+
         ]
+
     },
     //! The Lot Broker
     {
@@ -102,6 +102,10 @@ export const experienceData = [
                 body: 'CSS was used alongside Object Oriented CSS for Material-UI',
                 id: 'lot-exp-tech-002'
             }
+        ],
+        // Testimonial
+        extra: [
+
         ]
     },
     //! Hackathon
