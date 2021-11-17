@@ -23,6 +23,13 @@
     * Decrease app size
 # Changelog
 
+## 11/17
+1. Updated content within Experience>Nucamp data set
+    * Updated both Main and tech sections
+    * Will be adding button in top left soon
+        * Will contain full list of each concept covered in HTML, CSS, and JS as well as student reviews
+    * Will be adding similar button for TheLotBroker which will contain testimonial
+
 ## 11/16
 1. Minor optimization changes
     * Updated .filter()[0] to .find() for slight optimization improvement in projects and experience sections
