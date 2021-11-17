@@ -10,12 +10,17 @@ import GroupIcon from '@material-ui/icons/Group'
 import TimerIcon from '@material-ui/icons/Timer'
 import EditIcon from '@material-ui/icons/Edit'
 import TouchAppIcon from '@material-ui/icons/TouchApp'
+import MenuBookIcon from '@material-ui/icons/MenuBook'
+import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet'
+import AccountTreeIcon from '@material-ui/icons/AccountTree'
+import CodeIcon from '@material-ui/icons/Code'
 
-export const Project = ({proj}) => {
+export const Project = ({ proj }) => {
     if (!proj) return <></>
 
     const icons = { color: 'rgb(0, 69, 133)', fontSize: '60px' }
 
+    //! There must be a better way of going about this
     const getIcon = icon => {
         if (icon === 'PhoneAndroidIcon') return <PhoneAndroidIcon style={icons}/>
         else if (icon === 'ChatTwoToneIcon') return <ChatTwoToneIcon style={icons}/>
@@ -27,7 +32,11 @@ export const Project = ({proj}) => {
         else if (icon === 'TimerIcon') return <TimerIcon style={icons}/>
         else if (icon === 'EditIcon') return <EditIcon style={icons}/>
         else if (icon === 'TouchAppIcon') return <TouchAppIcon style={icons}/>
-        else return 'ICON ERROR'
+        else if (icon === 'MenuBookIcon') return <MenuBookIcon style={icons}/>
+        else if (icon === 'CodeIcon') return <CodeIcon style={icons}/>
+        else if (icon === 'AccountBalanceWalletIcon') return <AccountBalanceWalletIcon style={icons}/>
+        else if (icon === 'AccountTreeIcon') return <AccountTreeIcon style={icons}/>
+        else return 'ERROR'
     }
 
     return (

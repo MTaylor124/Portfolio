@@ -350,48 +350,48 @@ export const projectData = [
         link: null,
         buttonText: 'Portfolio',
         git: 'https://github.com/MTaylor124/Portfolio',
-        about: 'My portfolio showcases my front end development skills. Portfolio has been refactored to use React.js best practices. Code is written DRY using modern JavaScript (ES6) features. Github Link above',
+        about: 'My portfolio showcases my front end development skills. Portfolio has been refactored to use React.js best practices. Code is written DRY using modern JavaScript (ES6) features.',
         highlights: [
             {
-                title: '',
-                description: '',
-                id: '',
-                icon: ''
+                title: 'Hooks / Context',
+                description: 'Build using React best practices. Local state managed with hooks and higher level (global) state managed with React Context.',
+                id: 'prt-highlight-000',
+                icon: 'AccountBalanceWalletIcon'
             },
             {
-                title: '',
-                description: '',
-                id: '',
-                icon: 'FormatListBulletedTwoToneIcon'
+                title: 'ES6 JavaScript',
+                description: 'Codebase is designed elequently with an focus on DRY code and Higher order functions. Modern JavaScript features are implemented throughout including arrow functions, object destructuring and template literals.',
+                id: 'prt-highlight-001',
+                icon: 'CodeIcon'
             },
             {
-                title: '',
-                description: '',
-                id: '',
-                icon: 'PhotoSizeSelectActualTwoToneIcon'
+                title: 'Highly Scalable',
+                description: 'Repeating elements are generated based on JavaScript data sets. Because of this, adding and removing additional components within the Projects/Experience/Skills sections is done using the minimal code possible. This greatly optimizes app size and ease of use.',
+                id: 'prt-highlight-002',
+                icon: 'AccountTreeIcon'
             },
             {
-                title: '',
-                description: '',
-                id: '',
-                icon: 'ChatTwoToneIcon'
+                title: 'Material UI',
+                description: 'Many components within the 3rd-party Material UI (MUI) library are utilized for their elegant design. Some of the components used are Backdrops (this popup), Accordion (skills section) and the material Icons used throughout',
+                id: 'prt-highlight-003',
+                icon: 'MenuBookIcon'
             }
         ],
         tech: [
             {
                 title: 'React',
-                description: 'Created Custom and Reusable Components\n\nStage managed with Context',
-                id: 'lot-tech-000'
+                description: 'Created Custom and Reusable Components',
+                id: 'prt-tech-000'
             },
             {
                 title: 'Google Firebase',
-                description: 'Utilized for Hosting, Databases, Storage, and Authentication',
-                id: 'lot-tech-001'
+                description: 'Utilized for Hosting',
+                id: 'prt-tech-001'
             },
             {
                 title: 'CSS3',
-                description: 'Styled with CSS and Object-Oriented CSS with Material-UI',
-                id: 'lot-tech-002'
+                description: 'Styled with CSS',
+                id: 'prt-tech-002'
             }
         ]
     }
