@@ -29,6 +29,10 @@
     * Will be adding button in top left soon
         * Will contain full list of each concept covered in HTML, CSS, and JS as well as student reviews
     * Will be adding similar button for TheLotBroker which will contain testimonial
+2. Updated content within Projects>Portfolio data set
+    * Wrote relevent highlights and included brief descriptions
+    * Added appropriate icons
+    * Will need to rework some of the other Projects and expand on Portfolio tech
 
 ## 11/16
 1. Minor optimization changes
