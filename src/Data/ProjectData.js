@@ -3,8 +3,9 @@ import Blog from './Projects/BlogDesktop.png'
 import Icebreaker from './Projects/Icebreaker.png'
 import SpikeRush from './Projects/SpikeRushDesktop.png'
 import Mattcersize from './Projects/MattcersizePreview.png'
+import Portfolio from './Projects/Portfolio.png'
 
-export const emptyProject = {
+export const boilerplate = {
     included: false,
     order: 8, // Add 1 after use
     name: '',
@@ -12,7 +13,7 @@ export const emptyProject = {
     preview: null, // Picture
     route: '', // Relative route to picture
     link: '', // Link to deployed url
-    githubLink: '',
+    git: '',
     buttonText: '',
     about: '',
     highlights: [
@@ -36,12 +37,12 @@ export const projectData = [
     //! The Lot Broker
     {
         included: true,
-        order: 1,
+        order: 0,
         name: 'The Lot Broker',
         id: 'project-id-000',
         preview: TheLotBroker,
         link: 'https://thelotbroker.com/',
-        githubLink: '',
+        git: '',
         buttonText: 'The Lot Broker',
         about: 'TheLotBroker.com is a freelance project I picked up in early February 2020. I built an entirely new web app that would allow his colleagues to easier view his current inventory of Lots and to allow clients to easily contact him.',
         highlights: [
@@ -91,11 +92,11 @@ export const projectData = [
     //! Ranked Spike Rush
     {
         included: true,
-        order: 2,
+        order: 1,
         name: 'Ranked Spike Rush',
         id: 'project-id-001',
         preview: SpikeRush,
-        githubLink: '',
+        git: '',
         link: 'https://rankedspikerush.web.app/',
         buttonText: 'Ranked Spike Rush',
         about: 'RankedSpikeRush is a personal project based on a temporary game mode in the video game Rocket League. I built the site in less than 2 days and a week later I had build up a community of over 200 players and organized and carried out a 50+ team tournament that crowdfunded $200 grand prize for the winners.',
@@ -145,7 +146,7 @@ export const projectData = [
         id: 'project-id-002',
         preview: Icebreaker,
         link: 'https://ice-breaker-maker.web.app/',
-        githubLink: '',
+        git: '',
         buttonText: 'General Assembly Hackathon',
         about: 'I was Group Leader for a team of 5 that included both UX/UI experts and software engineers to successfully prototype, build, and present a fully functional mobile web app in less than 3 days.',
         highlights: [
@@ -195,7 +196,7 @@ export const projectData = [
         preview: Blog,
         link: null,
         buttonText: 'Blog',
-        githubLink: '',
+        git: '',
         about: 'My blog is currently a personal project of mine that I plan to include as an extension of my portfolio. The blog interface currently allows users to write their own blogs that are divided into several sections and can view or edit them while interacting with a smooth yet elegant user interface. NOTE: BLOG CURRENTLY DISABLED UNTIL AFTER PORTFOLIO IS REFACTORED',
         highlights: [
             {
@@ -244,7 +245,7 @@ export const projectData = [
         preview: Mattcersize,
         link: 'https://mtaylor124.github.io/Mattcersize-Client/#/',
         buttonText: 'Mattcersize (Deprecated)',
-        githubLink: 'https://github.com/MTaylor124/Mattcersize-Client',
+        git: 'https://github.com/MTaylor124/Mattcersize-Client',
         about: 'Mattcersize is a mobile-friendly Workout + Exercise tracker that was built in less than 4 days. This was my first fully-fleded React App that allowed users to catalog their workouts including specific exercises, number of reps and weight. NOTE: HEROKU EXTENSION DEPRECATED. APP NO LONGER FUNCTIONAL',
         highlights: [
             {
@@ -293,7 +294,7 @@ export const projectData = [
         preview: null,
         link: null,
         buttonText: 'Chuzr (in progress)',
-        githubLink: '',
+        git: '',
         about: '',
         highlights: [
             {
@@ -341,15 +342,15 @@ export const projectData = [
     },
     //! Portfolio
     {
-        included: false,
-        order: 7,
+        included: true,
+        order: 2,
         name: 'Portfolio',
         id: 'project-id-006',
-        preview: null,
+        preview: Portfolio,
         link: null,
         buttonText: 'Portfolio',
-        githubLink: '',
-        about: '',
+        git: 'https://github.com/MTaylor124/Portfolio',
+        about: 'My portfolio showcases my front end development skills. Portfolio has been refactored to use React.js best practices. Code is written DRY using modern JavaScript (ES6) features. Github Link above',
         highlights: [
             {
                 title: '',
