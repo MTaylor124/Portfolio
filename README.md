@@ -23,6 +23,14 @@
     * Decrease app size
 # Changelog
 
+## 11/18
+1. Added more content to skills section
+    * Expanded on React, JS
+    * Added MUI skill
+    * Removed less relevent skills
+2. Added .order property to each skill object
+    * Skills can not be sorted correctly instead of having to manually rearrange skill objects
+
 ## 11/17
 1. Updated content within Experience>Nucamp data set
     * Updated both Main and tech sections
