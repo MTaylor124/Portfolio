@@ -23,6 +23,13 @@
     * Decrease app size
 # Changelog
 
+## 11/19
+1. Included only the skills that I have content for at the moment
+2. **Deployed** New changes
+    * Next will be filling in remaining Skills
+    * Then adding testimonials/Student Reviews/Concept+Tech list from Nucamp
+    * Then Refactoring CSS
+
 ## 11/18
 1. Added more content to skills section
     * Expanded on React, JS
