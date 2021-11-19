@@ -130,9 +130,9 @@ export const skillsData = [
     },
     {
         order: 4,
-        included: true,
+        included: false,
         buttonText: 'CSS3',
-        about: '',
+        about: 'I style all my projects with CSS3',
         id: 'css-skills-000',
         sections: [
             {
@@ -155,7 +155,7 @@ export const skillsData = [
     },
     {
         order: 2,
-        included: true,
+        included: false,
         buttonText: 'Node',
         about: '',
         id: 'nod-skills-000',
@@ -180,7 +180,7 @@ export const skillsData = [
     },
     {
         order: 8,
-        included: true,
+        included: false,
         buttonText: 'VSCode',
         about: '',
         id: 'vsc-skills-000',
@@ -205,7 +205,7 @@ export const skillsData = [
     },
     {
         order: 6,
-        included: true,
+        included: false,
         buttonText: 'Github',
         about: '',
         id: 'git-skills-000',
@@ -230,7 +230,7 @@ export const skillsData = [
     },
     {
         order: 5,
-        included: true,
+        included: false,
         buttonText: 'HTML5',
         about: '',
         id: 'htm-skills-000',
@@ -255,7 +255,7 @@ export const skillsData = [
     },
     {
         order: 3,
-        included: true,
+        included: false,
         buttonText: 'Material-UI',
         about: '',
         id: 'mui-skills-000',
