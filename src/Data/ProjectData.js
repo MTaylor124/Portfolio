@@ -96,7 +96,7 @@ export const projectData = [
         name: 'Ranked Spike Rush',
         id: 'project-id-001',
         preview: SpikeRush,
-        git: '',
+        git: 'https://github.com/MTaylor124/RankedSpikeRush',
         link: 'https://rankedspikerush.web.app/',
         buttonText: 'Ranked Spike Rush',
         about: 'RankedSpikeRush is a personal project based on a temporary game mode in the video game Rocket League. I built the site in less than 2 days and a week later I had build up a community of over 200 players and organized and carried out a 50+ team tournament that crowdfunded $200 grand prize for the winners.',
@@ -146,7 +146,7 @@ export const projectData = [
         id: 'project-id-002',
         preview: Icebreaker,
         link: 'https://ice-breaker-maker.web.app/',
-        git: '',
+        git: 'https://github.com/MTaylor124/ice-breaker-maker',
         buttonText: 'General Assembly Hackathon',
         about: 'I was Group Leader for a team of 5 that included both UX/UI experts and software engineers to successfully prototype, build, and present a fully functional mobile web app in less than 3 days.',
         highlights: [
