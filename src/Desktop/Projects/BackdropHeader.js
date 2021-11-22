@@ -1,9 +1,11 @@
 import React from 'react'
 import Button from '@material-ui/core/Button'
 import CloseRoundedIcon from '@material-ui/icons/CloseRounded'
+import GitHubIcon from '@material-ui/icons/GitHub';
 import disableScroll from 'disable-scroll'
 
-export const BackdropHeader = ({setProjInfo, proj}) => {
+export const BackdropHeader = ({ setProjInfo, proj }) => {
+    if (!proj) return <></>
 
     const iconSize = '60px'
     const closeIcon = { color: 'white', width: iconSize, height: iconSize }
@@ -17,8 +19,8 @@ export const BackdropHeader = ({setProjInfo, proj}) => {
 
     return (
         <div className='d-u-backdrop-header'>
-            <div className="left"></div>
-            <a href={proj ? proj.link : ''} target="_blank" rel="noopener noreferrer" className="link">{proj ? proj.name : ''}</a>
+            {proj.git?<a href={proj.git} target="_blank" rel="noopener noreferrer" className='git'><GitHubIcon /><span>Github Repo</span></a>:<div></div>}
+            <a href={proj.link} target="_blank" rel="noopener noreferrer" className="link">{proj.name}</a>
             <Button style={closeButton} onClick={() => closeBackDrop()}><CloseRoundedIcon style={closeIcon} /></Button>
         </div>
     )

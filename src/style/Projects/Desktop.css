@@ -281,6 +281,33 @@
     align-items: center;
     height: 87px;
 }
+.d-u-backdrop-header div {
+    width: 100px;
+    height: 1px;
+}
+.d-u-backdrop-header .git {
+    width: 95px;
+    height: 75px;
+    margin-left: 5px;
+    border-radius: 8px 0 0 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #238636;
+    transition: .2s;
+}
+.d-u-backdrop-header span {
+    margin-top: 4px;
+}
+.d-u-backdrop-header .git:hover {
+    background-color: #2ea043;
+}
 .d-u-backdrop-header .link {
     font-size: 3.6rem;
     /* transition: 1.6s; */
@@ -290,11 +317,6 @@
 .d-u-backdrop-header .link:hover {
     text-decoration: underline;
 }
-.d-u-backdrop-header .left {
-    height: 1px;
-    width: 100px;
-}
-
 .d-projects-container .grid-container {
     display: flex;
     flex-direction: row;
