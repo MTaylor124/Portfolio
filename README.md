@@ -21,7 +21,15 @@
     * Skills
 11. Uninstall material UI library and only install specific components and icons that are used
     * Decrease app size
+
 # Changelog
+
+## 11/22
+1. Added testimonial button to Experience (The Lot Broker)
+    * Animated button to stand out
+    * Backdrop is only mounted when specific projects are mounted
+    * Created file for Nucamp extra info
+    * Refactored Experience css
 
 ## 11/21
 1. Added github links to projects that I have repos set up for
