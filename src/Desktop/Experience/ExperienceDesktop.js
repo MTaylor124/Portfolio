@@ -1,22 +1,12 @@
 import React, { useState } from 'react'
-import ExperienceBackdrop from './ExperienceBackdrop'
+import { ExperienceBackdrop } from './ExperienceBackdrop'
 import Button from '@material-ui/core/Button'
 import { experienceData } from '../../Data/ExperienceData'
 import disableScroll from 'disable-scroll'
 
 export const ExperienceDesktop = () => {
 
-    const experienceButton = {
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContext: 'flex-start',
-        alignItems: 'center',
-        textTransform: 'none',
-        width: '96%',
-        marginBottom: '5px',
-        paddingTop: '7px',
-        paddingBottom: '7px'
-    }
+    const experienceButton = { display: 'flex', flexDirection: 'row', justifyContext: 'flex-start', alignItems: 'center', textTransform: 'none', width: '96%', marginBottom: '5px', paddingTop: '7px', paddingBottom: '7px' }
 
     const [expInfo, setExpInfo] = useState({ open: false, current: null })
 

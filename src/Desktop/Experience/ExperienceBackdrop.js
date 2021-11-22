@@ -3,8 +3,9 @@ import Backdrop from '@material-ui/core/Backdrop'
 import Button from '@material-ui/core/Button'
 import CloseRoundedIcon from '@material-ui/icons/CloseRounded'
 import disableScroll from 'disable-scroll'
+import { ExtraInfo } from './ExtraInfo'
 
-export default function ExperienceBackdrop({ exp, setExpInfo, expInfo }) {
+export const ExperienceBackdrop = ({ exp, setExpInfo, expInfo }) => {
     const closeBackDrop = () => {
         disableScroll.off()
         setExpInfo({ open: false, current: exp.name })
@@ -18,15 +19,15 @@ export default function ExperienceBackdrop({ exp, setExpInfo, expInfo }) {
     })
 
     const experienceBackdrop = { zIndex: 10, backgroundColor: 'rgba(255,255,255,0.4)' }
-    const closeIcon = { color: 'white', fontSize: '40px', alignSelf: 'end', width: '5vw', height: '8vh', marginLeft: '5vw' }
-    const closeButton = { padding: 0, minHeight: 0, minWidth: 0, width: '100px', display: 'flex', borderRadius: '0 15px 0 0' }
+    const closeIcon = { color: 'white', fontSize: '60px', alignSelf: 'end', marginLeft: '100px' }
+    const closeButton = { padding: 0, height: '70px', minWidth: 0, display: 'flex', borderRadius: '0 15px 0 0' }
 
     return (
         <Backdrop open={expInfo.open} style={experienceBackdrop} transitionDuration={300}>
             <div className="exit-backdrop-exp"></div>
             <div className="d-experience-backdrop-container">
                 <div className="header">
-                    <div className="d-u-header-center"></div>
+                    <ExtraInfo extra={expInfo.current}/>
                     <header>{exp ? exp.buttonHeader : ''}</header>
                     <Button style={closeButton} onClick={() => closeBackDrop()}><CloseRoundedIcon style={closeIcon}/></Button>
                 </div>
