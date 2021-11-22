@@ -23,6 +23,11 @@
     * Decrease app size
 # Changelog
 
+## 11/21
+1. Added github links to projects that I have repos set up for
+    * Styled button in github style
+    * Refactored project backdrop headers
+
 ## 11/19
 1. Included only the skills that I have content for at the moment
 2. **Deployed** New changes
