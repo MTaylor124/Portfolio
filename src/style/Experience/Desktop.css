@@ -193,13 +193,73 @@
     }
   }
 .testimonial-container {
+    font-size: 20px;
     background-color: white;
     width: 450px;
     padding: 20px;
-    font-size: 20px;
     border-radius: 10px;
 }
 .testimonial-container div {
     text-align: right;
     padding-top: 10px;
+}
+.nucamp-container {
+    background-color: white;
+    width: 600px;
+    height: 470px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.nucamp-container section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+.concept-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    overscroll-behavior: contain;
+}
+.concept-container p {
+    margin: 3px 0;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1;
+    margin: 0 0 10px;
+}
+.concept-container p:last-of-type {
+    margin-bottom: 0;
+}
+.reviews-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.reviews-container h5 {
+    font-size: 0.85rem;
+    color: black;
+    text-align: center;
+    margin: 0 0 10px;
+}
+.reviews-container p {
+    text-align: center;
+    margin: 5px 0;
+}
+.reviews-scroll-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+    overscroll-behavior: contain;
 }
