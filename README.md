@@ -30,6 +30,11 @@
     * Backdrop is only mounted when specific projects are mounted
     * Created file for Nucamp extra info
     * Refactored Experience css
+2. Added Concept list and Student reviews to Experience (Nucamp)
+    * The additional backdrop has the complete concept list
+    * Student reviews are randomized by default. Each page load is limited to 20 reviews
+    * Added body-scroll-lock npm package. Will remove duplicate scroll lock npm package later
+    * Further refactored experience css
 
 ## 11/21
 1. Added github links to projects that I have repos set up for
