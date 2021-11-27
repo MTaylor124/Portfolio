@@ -24,16 +24,16 @@ export const SkillsDesktop = () => {
                 <header>Skills</header>
                 <p>Click to Expand</p>
                 {includedSkills.map((skill, i) => (
-                    <Accordion style={accordion} key={skill.id} onChange={() => handleToggleUnderline(i, skill.id)} sx={{ '&:before': { display: 'none' }}} disableGutters TransitionProps={{ unmountOnExit: true }}>
+                    <Accordion style={accordion} key={`${skill.name}-skills-${i}`} onChange={() => handleToggleUnderline(i, skill.id)} sx={{ '&:before': { display: 'none' }}} disableGutters TransitionProps={{ unmountOnExit: true }}>
                         <AccordionSummary style={summary} aria-controls={`panel${i}-content`} id={`panel${i}-header`}>
                             <div className='skill-underline'><header id={`${skill.id}-header`}>{skill.buttonText}</header></div>
                         </AccordionSummary>
                         <AccordionDetails style={details}>
                             {skill.about ? <h2>{skill.about}</h2> : <></>}
-                            {skill.sections.map(section => (
-                                <section key={section.id}>
+                            {skill.sections.map((section, j) => (
+                                <section key={`${skill.name}-${i}-${j}`}>
                                     <h3>{section.header}</h3>
-                                    {section.points.map(point => <h4 key={point.id}>{point.body}</h4>)}
+                                    {section.points.map((point, k) => <h4 key={`${skill.name}-${i}-${j}-${k}`}>{point.body}</h4>)}
                                 </section>
                             ))}
                         </AccordionDetails>
