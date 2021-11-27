@@ -4,25 +4,35 @@
 
 
 ## Development Plans:
-1. Refactoring Pre-existing code using React best practices 
-2. Convert Components to using local state instead of higher level state (context) when appropriate
-3. Generate components based off JavaScript data sets instead of hard coding (see projects section)
-4. Convert current sea of divs to semantically named HTML elements
+1. ~~Refactoring Pre-existing code using React best practices~~
+2. ~~Convert Components to using local state instead of higher level state (context) when appropriate~~
+3. ~~Generate components based off JavaScript data sets instead of hard coding~~
+4. ~~Convert current sea of divs to semantically named HTML elements~~
 5. Refactor CSS / Remove unused rulesets
 6. Convert all CSS to preprocessor (Sass or SCSS)
 7. Make appropriate commits for each feature that I work on
-8. Update information in each section
+8. ~~Update information in each section~~
 9. Remove all images/media from project to minimize app size
     * Upload images/resume to Google Storage
     * Get all images upon page load
-10. Add adnimations using react-spring to animate items within sections:
+10. Add animations using react-spring to animate items within sections:
     * Projects
     * Experience
     * Skills
 11. Uninstall material UI library and only install specific components and icons that are used
     * Decrease app size
+12. Rebuild mobile app
 
 # Changelog
+
+## 11/27
+1. Removed ids from skills section
+    * Keys for components are now generated based on the skill name and the index numbers of each iteration
+    * Removed the id property from each skill object and nested objects
+    * Added name property to each skill object
+    * Renamed function parameter to correct object name
+2. Added Content to skills section
+    * Added content to CSS, Github, MUI, and VSCode
 
 ## 11/22
 1. Added testimonial button to Experience (The Lot Broker)
