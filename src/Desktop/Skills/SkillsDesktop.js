@@ -12,8 +12,8 @@ export const SkillsDesktop = () => {
 
     const skillUnderlineList = includedSkills.map(item => false)
 
-    const handleToggleUnderline = (i, id) => {
-        const nodeStyle = document.getElementById(`${id}-header`).style
+    const handleToggleUnderline = (i, name) => {
+        const nodeStyle = document.getElementById(`${name}-header`).style
         if (!skillUnderlineList[i]) nodeStyle.textDecoration = 'underline'
         else nodeStyle.textDecoration = 'none'
         skillUnderlineList[i] = !skillUnderlineList[i]
