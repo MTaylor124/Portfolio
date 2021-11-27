@@ -34,18 +34,18 @@ export const ExperienceBackdrop = ({ exp, setExpInfo, expInfo }) => {
                 <div className="date">{exp ? exp.dates : ''}</div>
                 <div className='body'>
                     <div className="left">
-                        {!exp ? '' : exp.highlights.map(item => (
-                            <div className='item' key={item.id}>
-                                <header>{item.title}</header>
-                                <p>{item.body}</p>
+                        {!exp ? '' : exp.highlights.map((h, i) => (
+                            <div className='item' key={`${exp.name}-highlight-${i}`}>
+                                <header>{h.title}</header>
+                                <p>{h.body}</p>
                             </div>
                         ))}
                     </div>
                     <div className="right">
-                        {!exp ? '' : exp.tech.map(item => (
-                            <div className='item' key={item.id}>
-                                <header>{item.title}</header>
-                                <p>{item.body}</p>
+                        {!exp ? '' : exp.tech.map((t, i) => (
+                            <div className='item' key={`${exp.name}-tech-${i}`}>
+                                <header>{t.title}</header>
+                                <p>{t.body}</p>
                             </div>
                         ))}
                     </div>

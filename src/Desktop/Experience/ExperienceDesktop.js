@@ -14,7 +14,7 @@ export const ExperienceDesktop = () => {
 
     const showExp = name => {
         disableScroll.on()
-        setExpInfo({ open: true, current: name})
+        setExpInfo({ open: true, current: name })
     }
 
     return (
@@ -23,8 +23,8 @@ export const ExperienceDesktop = () => {
             <div className="d-experience-container">
                 <header>Experience</header>
                 <p>Click for more Details</p>
-                {experienceData.map(exp => (
-                    <Button style={experienceButton} onClick={() => showExp(exp.name)} key={exp.id}>
+                {experienceData.map((exp, i) => (
+                    <Button style={experienceButton} onClick={() => showExp(exp.name)} key={`${exp.name}-experience-${i}`}>
                         <div className="left">
                             <header>{exp.buttonHeader}</header>
                             <p>{exp.buttonSubHeader}</p>
