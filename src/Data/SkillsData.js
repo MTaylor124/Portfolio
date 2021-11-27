@@ -1,34 +1,5 @@
 export const skillsData = [
     {
-        included: false,
-        buttonText: '',
-        about: '',
-        id: '###-skills-000',
-        sections: [
-            {
-                header: '',
-                id: '###-header-000',
-                points: [
-                    {
-                        body: '',
-                        id: '###-###-point-000',
-                        links: null
-                    },
-                    // {
-                    //     body: '',
-                    //     id: '###-###-point-000',
-                    //     links: [
-                    //         {
-                    //             text: '',
-                    //             link: ''
-                    //         }
-                    //     ]
-                    // }
-                ]
-            }
-        ]
-    },
-    {
         order: 0,
         included: true,
         buttonText: 'React',
@@ -130,25 +101,85 @@ export const skillsData = [
     },
     {
         order: 4,
-        included: false,
+        included: true,
         buttonText: 'CSS3',
-        about: 'I style all my projects with CSS3',
+        about: 'I style all my projects using Cascading Style Sheets',
         id: 'css-skills-000',
         sections: [
             {
-                header: '',
-                id: 'css-header-000',
+                header: 'Flexbox',
+                id: 'css-header-002',
                 points: [
                     {
-                        body: '',
+                        body: 'I use flexbox to design and structure each component within my applications.',
                         id: 'css-000-point-000',
                         links: null
                     },
                     {
-                        body: '',
+                        body: 'Flex overflow allows for my applications to scale gracefully with varying device screen widths.',
+                        id: 'css-000-point-000',
+                        links: null
+                    },
+                    {
+                        body: 'This portfolio, TheLotBroker and RankedSpikeRush are all built and structured with flexbox.',
                         id: 'css-000-point-001',
                         links: null
                     },
+                ]
+            },
+            {
+                header: 'Semantic Names',
+                id: 'css-header-000',
+                points: [
+                    {
+                        body: 'Classes and ids are named appropriately in the standard kebab-case naming convention.',
+                        id: 'css-000-point-000',
+                        links: null
+                    }
+                ]
+            },
+            {
+                header: 'Reusable Classes',
+                id: 'css-header-000',
+                points: [
+                    {
+                        body: 'Any rulesets that can be reused will be. This helps prevent having the same style being set in multiple places',
+                        id: 'css-000-point-000',
+                        links: null
+                    }
+                ]
+            },
+            {
+                header: 'Minimum Required Rulesets',
+                id: 'css-header-001',
+                points: [
+                    {
+                        body: 'Utilizing inheritance, I ensure my elements are not being given the same properties they will inherit from the css hierarchy.',
+                        id: 'css-000-point-000',
+                        links: null
+                    }
+                ]
+            },
+            {
+                header: 'Variables',
+                id: 'css-header-002',
+                points: [
+                    {
+                        body: 'I utilize named variables most often for Global themes. This Minimizes the amount of places a color or font would have to be changed.', //* Update
+                        id: 'css-000-point-000',
+                        links: null
+                    }
+                ]
+            },
+            {
+                header: 'Media Queries',
+                id: 'css-header-002',
+                points: [
+                    {
+                        body: 'I utilize @media queries to target specific device dimmensions to apply classes when appropriate. This allows for better scaling with different viewports.',
+                        id: 'css-000-point-000',
+                        links: null
+                    }
                 ]
             }
         ]
@@ -157,16 +188,32 @@ export const skillsData = [
         order: 2,
         included: false,
         buttonText: 'Node',
-        about: '',
+        about: 'I use Node Package Manager (npm) to manage all of my projects. I frequently jump in the node cli runtime to test random JS logic I think of or see examples of.',
         id: 'nod-skills-000',
         sections: [
             {
-                header: '',
+                header: '3rd-Party Packages',
+                id: 'nod-header-000',
+                points: [
+                    {
+                        body: 'I use npm to install desired and to uninstall unused or unecessary external modules.',
+                        id: '',
+                        links: null
+                    },
+                    {
+                        body: 'App deployment is done',
+                        id: 'nod-000-point-001',
+                        links: null
+                    },
+                ]
+            },
+            {
+                header: 'Deploying',
                 id: 'nod-header-000',
                 points: [
                     {
                         body: '',
-                        id: 'nod-000-point-000',
+                        id: '',
                         links: null
                     },
                     {
@@ -180,22 +227,59 @@ export const skillsData = [
     },
     {
         order: 8,
-        included: false,
+        included: true,
         buttonText: 'VSCode',
-        about: '',
+        about: 'I write all of my code in VSCode. I have used the IDE to build my personal projects and grade student\'s workshop exercises at Nucamp. ',
         id: 'vsc-skills-000',
         sections: [
             {
-                header: '',
+                header: 'Emmet and Shortcuts',
                 id: 'vsc-header-000',
                 points: [
                     {
-                        body: '',
+                        body: 'I use emmet autocompletion regularly throughout my coding. I use VSCode keybindings and shortcuts to automate as much code as possible. As much as I love to hard code everything myself, the autocomplete never accidentally adds an extra "s" to the end of variable names and throws errors.', //* Personality
                         id: 'vsc-000-point-000',
                         links: null
                     },
                     {
-                        body: '',
+                        body: 'I teach a VSCode and Keyboard shortcut tutorial at the end of the second workshop of my web development bootcamps. This is extra to the Nucamp curriculum and I show my students some of the things I wish I knew existed back when I was first learning to code.',
+                        id: 'vsc-000-point-001',
+                        links: null
+                    },
+                ]
+            },
+            {
+                header: 'Integrated Terminal',
+                id: 'vsc-header-000',
+                points: [
+                    {
+                        body: 'I utilize the integrated terminal within VSCode while developing and deploying all of my applications.',
+                        id: 'vsc-000-point-000',
+                        links: null
+                    },
+                    {
+                        body: 'I use npm to manage dependancies for my apps and to install 3rd party modules.',
+                        id: 'vsc-000-point-001',
+                        links: null
+                    },
+                ]
+            },
+            {
+                header: 'Comments',
+                id: 'vsc-header-000',
+                points: [
+                    {
+                        body: 'Although I rarely comment my own code, I use comments during my teaching to provide constructive feedback within student\'s own code. ',
+                        id: 'vsc-000-point-000',
+                        links: null
+                    },
+                    {
+                        body: 'I make use of all of VSCode\'s different colors for corresponding concerns. Red is for critical errors or when code has clear room for optimization. Blue is for Concept sections, or as a label for the underlining theme of the example. Bright and dark(standard) comments for remaining comments with brighter to emphasize select lines.',
+                        id: 'vsc-000-point-001',
+                        links: null
+                    },
+                    {
+                        body: 'HTML, CSS and JS all have separate commenting out conventions and I frequently use all of them. Each can be highlighted in all 4 colors.',
                         id: 'vsc-000-point-001',
                         links: null
                     },
@@ -205,25 +289,31 @@ export const skillsData = [
     },
     {
         order: 6,
-        included: false,
+        included: true,
         buttonText: 'Github',
-        about: '',
+        about: 'I use github to host each of my project\'s repositories.',
         id: 'git-skills-000',
         sections: [
             {
-                header: '',
+                header: 'Concise Commits',
                 id: 'git-header-000',
                 points: [
                     {
-                        body: '',
+                        body: 'I do many commits, each of which only had the relevant files for a specific feature or modification.',
                         id: 'git-000-point-000',
                         links: null
-                    },
+                    }
+                ]
+            },
+            {
+                header: 'Appropriate Branches',
+                id: 'git-header-000',
+                points: [
                     {
-                        body: '',
-                        id: 'git-000-point-001',
+                        body: 'For my personal projects I tend to stay on the master/main branch. During teach development, I work with each teammate to plan for branchs to be made for each required feature with a clear log of changes made.',
+                        id: 'git-000-point-000',
                         links: null
-                    },
+                    }
                 ]
             }
         ]
@@ -232,15 +322,15 @@ export const skillsData = [
         order: 5,
         included: false,
         buttonText: 'HTML5',
-        about: '',
+        about: 'I use html elemnts ',
         id: 'htm-skills-000',
         sections: [
             {
-                header: '',
+                header: 'Semantically Named Elements',
                 id: 'htm-header-000',
                 points: [
                     {
-                        body: '',
+                        body: 'Accessibility',
                         id: 'htm-000-point-000',
                         links: null
                     },
@@ -255,25 +345,51 @@ export const skillsData = [
     },
     {
         order: 3,
-        included: false,
+        included: true,
         buttonText: 'Material-UI',
-        about: '',
+        about: 'I use many of the components that in the MUI library throughout my applications.',
         id: 'mui-skills-000',
         sections: [
             {
-                header: '',
+                header: 'Custom Components',
                 id: 'mui-header-000',
                 points: [
                     {
-                        body: '',
+                        body: 'I highly customize each component I import to meet my specific needs.',
                         id: 'mui-000-point-000',
                         links: null
                     },
                     {
-                        body: '',
+                        body: 'Style is provided through Object Oriented Style Sheets similar to those used in vanilla React Native',
                         id: 'mui-000-point-001',
                         links: null
                     },
+                    {
+                        body: 'Styles given to MUI components are JavaScript Objects. Global themes can be managed in higher order state (context) similarly to how global variables in CSS.',
+                        id: 'mui-000-point-000',
+                        links: null
+                    },
+                    {
+                        body: 'The components I have the most experience with are Backdrop, Button/ButtonGroup, TextField, Accordion, Tabs, Menus, Progress, and Divider',
+                        id: 'mui-000-point-000',
+                        links: null
+                    }
+                ]
+            },
+            {
+                header: 'Icon Library',
+                id: 'mui-header-000',
+                points: [
+                    {
+                        body: 'The MUI icon library has tasteful and minimalistc icons that I use regularly. They add a nice touch without being distracting.',
+                        id: 'mui-000-point-000',
+                        links: null
+                    },
+                    {
+                        body: 'Icons can be styled just like any other MUI component.',
+                        id: 'mui-000-point-001',
+                        links: null
+                    }
                 ]
             }
         ]
@@ -334,3 +450,33 @@ export const skillsData = [
 ]
 
 export const includedSkills = skillsData.filter(x => x.included).sort((x, y) => x.order - y.order)
+
+export const boilerplate = {
+    included: false,
+    buttonText: '',
+    about: '',
+    id: '###-skills-000',
+    sections: [
+        {
+            header: '',
+            id: '###-header-000',
+            points: [
+                {
+                    body: '',
+                    id: '###-###-point-000',
+                    links: null
+                },
+                // {
+                //     body: '',
+                //     id: '###-###-point-000',
+                //     links: [
+                //         {
+                //             text: '',
+                //             link: ''
+                //         }
+                //     ]
+                // }
+            ]
+        }
+    ]
+}
