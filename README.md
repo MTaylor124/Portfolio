@@ -33,6 +33,8 @@
     * Renamed function parameter to correct object name
 2. Added Content to skills section
     * Added content to CSS, Github, MUI, and VSCode
+3. Removed ids from Projects and experience sections
+    * Keys are generated from index numbers as well
 
 ## 11/22
 1. Added testimonial button to Experience (The Lot Broker)
