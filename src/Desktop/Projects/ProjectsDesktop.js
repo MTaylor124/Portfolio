@@ -34,12 +34,12 @@ export const ProjectsDesktop = () => {
                 <div className="header">Projects</div>
                 <div className="subheader">Click on a project for more details</div>
                 <div className="grid-container">
-                    {includedProjects.map(projectItem => (
-                        <div className="item" key={projectItem.id}>
-                            <Button style={projectButton} onClick={() => showProj(projectItem.name)}>
+                    {includedProjects.map(p => (
+                        <div className="item" key={`${p.name}-project`}>
+                            <Button style={projectButton} onClick={() => showProj(p.name)}>
                                 <div className="d-projects-new-container">
-                                    <img src={projectItem.preview} alt={`${projectItem.name}`} className='d-projects-image-preview'/>
-                                    {projectItem.buttonText}
+                                    <img src={p.preview} alt={`${p.name}`} className='d-projects-image-preview'/>
+                                    {p.buttonText}
                                 </div>
                             </Button>
                         </div>

@@ -47,8 +47,8 @@ export const Project = ({ proj }) => {
             </section>
             <section className="highlights">
                 <header>Highlights</header>
-                {proj.highlights.map(h => (
-                    <div className='item' key={h.id}>
+                {proj.highlights.map((h, i) => (
+                    <div className='item' key={`${proj.name}-h-${i}`}>
                         {getIcon(h.icon)}
                         <section>
                             <header>{h.title}</header>
@@ -59,8 +59,8 @@ export const Project = ({ proj }) => {
             </section>
             <section className="tech">
                 <header>Tech</header>
-                {proj.tech.map(t => (
-                    <section className="item" key={t.id}>
+                {proj.tech.map((t, i) => (
+                    <section className="item" key={`${proj.name}-t-${i}`}>
                         <header>{t.title}</header>
                         <p>{t.description}</p>
                     </section>
