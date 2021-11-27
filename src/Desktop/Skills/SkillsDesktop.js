@@ -5,6 +5,7 @@ import AccordionDetails from '@mui/material/AccordionDetails'
 import { includedSkills } from "../../Data/SkillsData"
 
 export const SkillsDesktop = () => {
+    
     const accordion = { backgroundColor: 'rgba(0, 118, 133, 0)', width: '65%', boxShadow: 'none', border: 'none', minHeight: '0px' }
     const summary = { padding: '0px',  minHeight: '10px', fontSize: '1.8rem', backgroundColor: 'rgba(255, 255, 255, 0.25)', margin: '0px' }
     const details = { boxShadow: 'none', border: 'none', paddingTop: '0' }
@@ -24,9 +25,9 @@ export const SkillsDesktop = () => {
                 <header>Skills</header>
                 <p>Click to Expand</p>
                 {includedSkills.map((skill, i) => (
-                    <Accordion style={accordion} key={`${skill.name}-skills-${i}`} onChange={() => handleToggleUnderline(i, skill.id)} sx={{ '&:before': { display: 'none' }}} disableGutters TransitionProps={{ unmountOnExit: true }}>
+                    <Accordion style={accordion} key={`${skill.name}-skills-${i}`} onChange={() => handleToggleUnderline(i, skill.name)} sx={{ '&:before': { display: 'none' }}} disableGutters TransitionProps={{ unmountOnExit: true }}>
                         <AccordionSummary style={summary} aria-controls={`panel${i}-content`} id={`panel${i}-header`}>
-                            <div className='skill-underline'><header id={`${skill.id}-header`}>{skill.buttonText}</header></div>
+                            <div className='skill-underline'><header id={`${skill.name}-header`}>{skill.buttonText}</header></div>
                         </AccordionSummary>
                         <AccordionDetails style={details}>
                             {skill.about ? <h2>{skill.about}</h2> : <></>}
